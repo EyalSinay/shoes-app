@@ -1,0 +1,70 @@
+.shoes-product-container{
+    width: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.5s;
+}
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#add-btn{
+    background-image: url(https://img.icons8.com/ios/50/000000/add--v1.png);
+}
+#edit-btn{
+    background-image: url(https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-edit-interface-kiranshastry-lineal-kiranshastry-2.png);
+}
+#delete-btn{
+    background-image: url(https://img.icons8.com/dotty/80/000000/filled-trash.png);
+}
+
+.create-edit-item-main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
+.create-edit-item-sub-container{
+    width: 70%;
+    height: 70%;
+    background-color: aliceblue;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.input-text-container{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.input-text-container input{
+    width: 60%;
+}
