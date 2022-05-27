@@ -32,14 +32,15 @@ class Shoes extends React.Component {
     }
 
     onConfirmClick = ({ titleInput, descriptionInput }, id) => {
-        const { name, description } = { titleInput, descriptionInput }
+        const name = titleInput;
+        const description = descriptionInput;
         if (id) {
             const { createdAt, shoes } = this.getShoesById(id);
             this.putItem({ name, description, createdAt, shoes }, id);
         } else {
             this.postItem({ name, description });
         }
-        this.setState({modify: false, toModifyId: null});
+        this.setState({ modify: false, toModifyId: null });
     }
 
     postItem = async (newShoes) => {

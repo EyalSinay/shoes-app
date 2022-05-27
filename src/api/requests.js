@@ -34,7 +34,7 @@ const putShoes = async (updateShoes, id) => {
 // delete:
 const deleteShoes = async (id) => {
     try {
-        const response = await axios(BASE_URL + "/shoes/" + id);
+        const response = await axios.delete(BASE_URL + "/shoes/" + id);
         return response.data;
     } catch (err) {
         console.log(err);
