@@ -40,17 +40,18 @@ class Shoes extends React.Component {
             this.postItem({ name, description });
         }
         this.setState({modify: false, toModifyId: null});
-        this.getData();
     }
 
     postItem = async (newShoes) => {
         const response = await postShoes(newShoes);
         console.log(response);
+        this.getData();
     }
 
     putItem = async (updateShoes, id) => {
         const response = await putShoes(updateShoes, id);
         console.log(response);
+        this.getData();
     }
 
     deleteItem = async (id) => {
