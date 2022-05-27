@@ -43,12 +43,14 @@ class Shoes extends React.Component {
     }
 
     postItem = async (newShoes) => {
+        this.setState({ didLoad: false });
         const response = await postShoes(newShoes);
         console.log(response);
         this.getData();
     }
 
     putItem = async (updateShoes, id) => {
+        this.setState({ didLoad: false });
         const response = await putShoes(updateShoes, id);
         console.log(response);
         this.getData();
